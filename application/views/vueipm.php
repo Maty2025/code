@@ -176,10 +176,9 @@
     <tr>
       <th scope="row"><?php echo $n1++ ?> </th>
       <td><?php echo $resultat->libelle; ?></td>
-      <td><?php echo $resultat->localisation; ?></td>
+      <td><?php echo $resultat->adresse_commande; ?></td>
       <td><?php echo $resultat->telephone; ?></td>
-      <td><?php //echo $resultat->soins; ?></td>
-      <td><a>Acheter</a> </td>
+    <!--  <td><a>Acheter</a> </td>-->
     </tr>
     
 <?php  endforeach; ?>
@@ -216,9 +215,9 @@
 						<a href="aboutus.html">Accueil</a>
 						<a href="#" >A propos</a>
 						<a href="destination.html" >Services</a>
-						<a href="#" title="Top Destination">Achat medicament</a>
+						<a href="#" title="Top Destination">Medicaments disponibles</a>
 						
-							<a href="blog.html" title="Latest News">Tchatter </a>
+							<a href="blog.html" title="Latest News">IPM </a>
 						
 						<a href="contactus.html" title="Contact Us">Contact Us</a>
 					</aside><!-- Widget Link /- -->

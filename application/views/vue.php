@@ -12,7 +12,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-	<title>Medislib</title>
+	<title>Medeasy</title>
 	<!-- Standard Favicon -->
 	<link rel="icon" type="image/png" href="../assets/images/icon.png" />
 	<!-- For iPhone 4 Retina display: -->
@@ -155,17 +155,21 @@
 								</!-- Header /- -->
 	<main class="site-main page-spacing">
 		<!-- PageBanner -->
-
+		<div class="container-fluid no-padding pagebanner aboutus">
+			<div class="container">
+				<h3>A propos</h3>
+			</div>
+		</div><!-- PageBanner /- -->	
 		<div class="">
 			<div class="container">
+			
 				<table class="table">
   <thead>
     <tr>
       <th scope="col">Numero</th>
       <th scope="col">Libelle</th>
       <th scope="col">Adresse</th>
-      <th scope="col">Numero telephone</th>
-      <th scope="col"></th>
+      <th scope="col">Telephone</th>
     </tr>
   </thead>
   <tbody>
@@ -174,14 +178,11 @@
   foreach ($resultats as $resultat): ?>
 
     <tr>
-      <th scope="row"><?php echo $n1++ ?> </th>
+      <th scope="row"><?php echo $n1++ ?></th>
       <td><?php echo $resultat->libelle; ?></td>
-      <td><?php echo $resultat->localisation; ?></td>
+      <td><?php echo $resultat->adresse_commande; ?></td>
       <td><?php echo $resultat->telephone; ?></td>
-      <td><?php //echo $resultat->soins; ?></td>
-      <td><a>Acheter</a> </td>
     </tr>
-    
 <?php  endforeach; ?>
   
   </tbody>
