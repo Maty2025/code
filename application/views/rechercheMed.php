@@ -16,21 +16,7 @@
 				
 					
 					   <div class="card">
-                        <div class="card-header">
-                            <strong class="card-title">Notes</strong>
-                        </div>
-                        <div class="card-body">
-                            <table class="table">
-                              <thead>
-                                <tr>
-                                  <th scope="col">#</th>
-                                  <th scope="col">nom</th>
-                                  <th scope="col">prenom</th>
-                                  <th scope="col">ville</th>
-                                  <th scope="col">specialité</th>
-                              </tr>
-                          </thead>
-                          <tbody>
+                       
 						<?php  foreach ($resultats as $resultat): ?>
 																			
                             <tr>
