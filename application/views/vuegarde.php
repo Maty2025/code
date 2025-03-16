@@ -174,27 +174,14 @@
   </thead>
   <tbody>
 <?php
-	
     $n1= 1;
   foreach ($resultats as $resultat): ?>
 
-    <tr style="color: green;">
+    <tr>
       <th scope="row"><?php echo $n1++ ?></th>
       <td><?php echo $resultat->libelle; ?></td>
       <td><?php echo $resultat->adresse_commande; ?></td>
       <td><?php echo $resultat->telephone; ?></td>
-      <td><img src="../assets/images/vert.jpg" width="30px" height="17px"></td>
-    </tr>
-<?php  endforeach; ?>
-<?php
-	
-  foreach ($results as $result): ?>
-
-    <tr>
-      <th scope="row"><?php echo $n1++ ?></th>
-      <td><?php echo $result->libelle; ?></td>
-      <td><?php echo $result->adresse_commande; ?></td>
-      <td><?php echo $result->telephone; ?></td>
     </tr>
 <?php  endforeach; ?>
   

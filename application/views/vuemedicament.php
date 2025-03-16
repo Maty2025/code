@@ -155,17 +155,22 @@
 								</!-- Header /- -->
 	<main class="site-main page-spacing">
 		<!-- PageBanner -->
-
+		<div class="container-fluid no-padding pagebanner aboutus">
+			<div class="container">
+				<h3>A propos</h3>
+			</div>
+		</div><!-- PageBanner /- -->	
 		<div class="">
 			<div class="container">
+				<h3>A propos</h3>
 				<table class="table">
   <thead>
     <tr>
-      <th scope="col">Numero</th>
-      <th scope="col">Libelle</th>
-      <th scope="col">Adresse</th>
-      <th scope="col">Numero telephone</th>
-      <th scope="col"></th>
+      <th scope="col">#</th>
+      <th scope="col">First</th>
+      <th scope="col">Last</th>
+      <th scope="col">Handle</th>
+            <th scope="col">Handle</th>
     </tr>
   </thead>
   <tbody>
@@ -174,14 +179,12 @@
   foreach ($resultats as $resultat): ?>
 
     <tr>
-      <th scope="row"><?php echo $n1++ ?> </th>
-      <td><?php echo $resultat->libelle; ?></td>
-      <td><?php echo $resultat->localisation; ?></td>
-      <td><?php echo $resultat->telephone; ?></td>
-      <td><?php //echo $resultat->soins; ?></td>
-      <td><a>Acheter</a> </td>
+      <th scope="row"><?php echo $n1++ ?></th>
+      <td><?php echo $resultat->libelle_medicament; ?></td>
+      <td><?php echo $resultat->prix; ?></td>
+      <td><?php echo $resultat->mode_emploi; ?></td>
+      <td><?php echo $resultat->soins; ?></td>
     </tr>
-    
 <?php  endforeach; ?>
   
   </tbody>

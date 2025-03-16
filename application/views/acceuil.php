@@ -183,34 +183,18 @@
 							<div class="col-md-5 col-sm-12 col-xs-12 bookingform-details" style="margin-top: -420px; margin-left: 690px;">
 								<!-- Nav tabs -->
 								<ul class="nav nav-tabs" role="tablist">
-									<li role="presentation" class="active"><a href="#booking_flight" aria-controls="booking_flight" role="tab" data-toggle="tab"><img src="assets/images/photoslider2-ic1.png" alt="photoslider2-ic1" width="24" height="23"/>Medicaments disponibles </a></li>
+									<li role="presentation" class="active"><a href="#booking_flight" aria-controls="booking_flight" role="tab" data-toggle="tab"><img src="assets/images/photoslider2-ic1.png" alt="photoslider2-ic1" width="24" height="23"/>Achat </a></li>
 									<li role="presentation"><a href="#booking_train" aria-controls="booking_train" role="tab" data-toggle="tab">Pharmacie </a></li>
-									<li role="presentation"><a href="#booking_bus" aria-controls="booking_bus" role="tab" data-toggle="tab"><img src="assets/images/photoslider2-ic3.png" alt="photoslider2-ic3" width="22" height="23"/>IPM </a></li>
+									<li role="presentation"><a href="#booking_bus" aria-controls="booking_bus" role="tab" data-toggle="tab"><img src="assets/images/photoslider2-ic3.png" alt="photoslider2-ic3" width="22" height="23"/>Tchatter </a></li>
 								</ul>
 								<div class="tab-content">
 									<div role="tabpanel" class="tab-pane active fade in" id="booking_flight">
-										<form class="booking-form" method="post" action="index.php/Medicament" >
-
+										<form class="booking-form">
 											<div class="row">
 												<div class="form-group col-md-12 no-padding booking_location ">
 													<label>Lister les medicaments</label>
 													<div class="input-group textpicker" id="datepicker">
-														<input list="ice-cream-flavors" id="ice-cream-choice" name="rm"  class="form-control"/>
-
-											
- 											
-     
-
-         <datalist id="ice-cream-flavors">
- 				<?php foreach ($resultats as $resultat): ?>
-  			 <option value="<?php echo $resultat->libelle_medicament; ?>"></option>
-  			 <?php  endforeach; ?>
-</datalist>
-          
-
-
-
-														
+																<input type='text' class="form-control"/>
 																<span class="input-group-addon add-on">
 													
 																</span>
@@ -247,7 +231,7 @@
 													</div>
 												</div>-->
 												<div class="form-group col-md-12 no-padding">
-													<input type="submit">Rechercher</input>
+													<a href="index.php/Medicament">Rechercher</a>
 												</div>
 											</div>
 										</form>
@@ -302,20 +286,29 @@
 										</form>
 									</div>
 									<div role="tabpanel" class="tab-pane fade" id="booking_bus">
-										<form method="post" action="index.php/Ipm">
+										<form class="		">
 											<div class="row">
 												<div class="form-group col-md-12 no-padding booking_location select-options">
-								
-													<label> A quel IPM appartenez-vous?</label>
-													<div >
-														<input type="text" name="sa">
+													<p>NB:Nous ne sommes pas responsable de la prescription du medecin</p>
+													<label>A qui voulez-vous parlez?</label>
+													<div class="select_options">
+														<select class="form-control">
+															<option>Pediatre</option>
+															<option>Ophtamologue</option>
+															<option>Dentiste</option>
+															<option>ORL</option>
+														</select>
 													</div>
 												</div>
 												<div class="form-group col-md-12 no-padding">
 												</div>
 												<div class="col-md-7 col-sm-2 col-xs-4 booking_rooms select-options">
-															<input type="submit">
-															
+															<label>Veuillez choisir votre modalite</label>
+															<select class="form-control">
+																<option>Wave</option>
+																<option>orange Money</option>
+																<option>Carte physique</option>
+															</select>
 														</div>
 													</div>
 												</div>

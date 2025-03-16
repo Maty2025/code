@@ -14,10 +14,9 @@ class Garde extends CI_Controller {
 
 
 	    $resultats = $this->Modele->listgarde();
-	    $results = $this->Modele->listnongarde();
 		
         
-		$this->load->view('vuegarde',compact('resultats','results'));
-        
+		$this->load->view('vuegarde',compact('resultats'));
+       
 	}
 }

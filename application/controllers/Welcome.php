@@ -9,11 +9,11 @@ class Welcome extends CI_Controller {
         $this->load->library('form_validation');
         $this->load->helper('form');
         
-        $this->load->model('Modele');
-	    $resultats = $this->Modele->listmedicament();
-	    
+        //$this->load->model('Modele');
+	    //$resultTDs = $this->Modele->listtypeMed();
+	    //$resultLVs = $this->Modele->listville();
+		//$this->load->view('Acceuil',compact('results'));
         
-		$this->load->view('acceuil',compact('resultats'));
-
+		$this->load->view('acceuil');
 	}
 }
